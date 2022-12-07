@@ -19,6 +19,7 @@ public class ProjectService {
     newProject.setStatus("PENDING");
     newProject.setStartDate(project.getStartDate());
     newProject.setDeadline(project.getDeadline());
+    newProject.setEndDate(project.getEndDate());
     newProject = projectRepository.save(newProject);
     return newProject;
   }
